@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>BoxingGameIntroScreen</title>
+</head>
+
+<link href="C:\Users\W10 User\Documents\WebSites\BoxingGame\style.css" rel="stylesheet" type="text/css">
+
+<body>
+
+  <!--Intro audio button-->
+  <button class="IntroAudioBtn" onclick="playIntroAudio()">Click here to listen to the introduction audio</button>
+
+  <!-- Intro text -->
+  <h2>Hey, I'm John,
+    I will be your coach.
+    I will call out random combinations and expect you to throw them as fast as you can.
+    You can choose to hit pads with me by selecting a difficulty from the options below or you can fight with opponents
+    in story mode.<br>
+    <p> </p><br>
+    <p> </p>
+  </h2>
+
+  <!-- Option buttons -->
+  <ul style="list-style-type:none;">
+    <li>
+      <button class="BtnProperties" style="background-color:lightgreen"><a class="LinkOptions"
+          href="C:\Users\W10 User\Documents\WebSites\BoxingGame\Easy.html">Beginner</a></button>
+    </li>
+    <li>
+      <button class="BtnProperties" style="background-color:skyblue"><a class="LinkOptions"
+          href="C:\Users\W10 User\Documents\WebSites\BoxingGame\Medium.html">Amateur</a></button>
+    </li>
+    <li>
+      <button class="BtnProperties" style="background-color:lightsalmon"><a class="LinkOptions"
+          href="C:\Users\W10 User\Documents\WebSites\BoxingGame\Hard.html">Pro</a></button>
+    </li>
+    <li>
+      <button class="BtnProperties" style="background-color:gold"><a class="LinkOptions"
+          href="C:\Users\W10 User\Documents\WebSites\BoxingGame\StoryMode.html">Story Mode</a></button>
+    </li>
+    <li>
+      <button class="BtnProperties" style="background-color:white"><a class="LinkOptions"
+          href="C:\Users\W10 User\Documents\WebSites\BoxingGame\OpponentSelect.html">Select Opponent</a></button>
+    </li>
+  </ul>
+
+  <!-- Coach image -->
+  <img class="CoachImageIntroduction" src="C:\Users\W10 User\Documents\WebSites\BoxingGame\Coach1.png"></img>
+
+  <!-- Intro audio file -->
+  <audio id="IntroAudio" src="C:\Users\W10 User\Documents\WebSites\BoxingGame\IntroAudioC.m4a"></audio>
+
+</body>
+
+<script>
+
+  // JS to play intro audio on button click
+  function playIntroAudio() {
+    IntroAudioPlay = document.getElementById("IntroAudio");
+    console.log("running audio func");
+    IntroAudioPlay.play();
+  }
+</script>
+
+</html>
